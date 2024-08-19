@@ -1,4 +1,3 @@
-import {Component} from "react";
 import Header from "../../layout/component/Header";
 import Footer from "../../layout/component/Footer";
 import Banner from "./component/Banner.tsx";
@@ -6,41 +5,47 @@ import "./component/style.css"
 import {PropertyDetailsDto} from "../../../data/PropertyDetails.type.ts";
 import mockData from "../response.json";
 import LatestRentalProperty from "../../layout/component/LatestRentalProperty";
-import FilterProperty from "./component/FilterProperty.tsx";
+import {useEffect, useState} from "react";
+import FilterSection from "./component/FilterSection.tsx";
+import {Container} from "react-bootstrap";
 
-type Props = {}
+export default function Property(){
 
-type State ={
-  getPropertyDetailsDtoList:PropertyDetailsDto[] | undefined
-}
+  const [propertyDetailsDto, setPropertyDetailsDto] = useState<PropertyDetailsDto[] | undefined>(undefined);
+  const [locationFilter,setLocationFilter] = useState<string>("");
+  const [districtTypeFilter,setDistrictTypeFilter] = useState<string>("");
 
-export default class Property extends Component<Props, State>{
-
-  constructor(props:Props) {
-    super(props);
-    this.state ={
-      getPropertyDetailsDtoList:  undefined
-    }
+  const handleLocationFilterChange = (locationFilter:string) =>{
+    setLocationFilter(locationFilter)
   }
 
-  componentDidMount() {
-    this.setState({
-      getPropertyDetailsDtoList:mockData
-    })
+  const handleDistrictFilterChange = (districtTypeFilter:string) =>{
+    setDistrictTypeFilter(districtTypeFilter)
   }
 
-  render() {
+  useEffect(()=>{
+    setPropertyDetailsDto(mockData);
+  },[])
+
     return (
       <>
         <Header/>
         <Banner/>
-        <FilterProperty/>
+        <Container>
+        <FilterSection locationFilter={locationFilter}
+        handleLocationFilterChange={handleLocationFilterChange}
+                       districtTypeFilter={districtTypeFilter}
+        handleDistrictFilterChange={handleDistrictFilterChange}
+        />
+        </Container>
         {
-          this.state.getPropertyDetailsDtoList &&
-            <LatestRentalProperty getPropertyDetailsDtoList={this.state.getPropertyDetailsDtoList}/>
+          propertyDetailsDto &&
+            <LatestRentalProperty getPropertyDetailsDtoList={propertyDetailsDto}
+            locationFilter={locationFilter}
+            districtTypeFilter={districtTypeFilter}
+            />
         }
         <Footer/>
       </>
     );
-  }
 }

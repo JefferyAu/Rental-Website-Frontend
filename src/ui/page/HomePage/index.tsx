@@ -5,30 +5,22 @@ import Footer from "../../layout/component/Footer";
 import {PropertyDetailsDto} from "../../../data/PropertyDetails.type.ts";
 import mockData from "../response.json"
 import LatestRentalProperty from "../../layout/component/LatestRentalProperty";
-import {Component} from "react";
+import {useEffect, useState} from "react";
 
-type Props ={}
 
-type State ={
-  getPropertyDetailsDtoList:PropertyDetailsDto[] | undefined
-}
+export default function HomePage() {
 
-export default class HomePage extends Component<Props,State>{
+  const [propertyDetailsDto, setPropertyDetailsDto] = useState<PropertyDetailsDto[] | undefined>(undefined);
+  const [locationFilter] = useState<string>("");
+  const [districtTypeFilter] = useState<string>("");
+  // // const handleLocationFilterChange = (locationFilter:string) =>{
+  // //   setLocationFilter(locationFilter)
+  // // }
 
-constructor(props:Props) {
-  super(props);
-  this.state ={
-    getPropertyDetailsDtoList:  undefined
-  }
-}
+  useEffect(()=>{
+   setPropertyDetailsDto(mockData);
+  },[])
 
-componentDidMount() {
-  this.setState({
-    getPropertyDetailsDtoList:mockData
-  })
-}
-
-  render() {
   return (
     <>
       <Header/>
@@ -37,12 +29,14 @@ componentDidMount() {
         <h1>最新租盤</h1><br/>
       </div>
       {
-        this.state.getPropertyDetailsDtoList &&
-          <LatestRentalProperty getPropertyDetailsDtoList={this.state.getPropertyDetailsDtoList}/>
+        propertyDetailsDto &&
+          <LatestRentalProperty getPropertyDetailsDtoList={propertyDetailsDto}
+          locationFilter={locationFilter}
+          districtTypeFilter={districtTypeFilter}
+          />
       }
       <Footer/>
     </>
   );
-}
 
 }

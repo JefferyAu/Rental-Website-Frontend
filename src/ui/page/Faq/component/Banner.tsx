@@ -5,7 +5,9 @@ export default function Banner(){
     <>
       <Row className="faq-banner-img">
         <Col className="d-flex justify-content-center align-items-center flex-column">
-          <div className="align-items-lg-end">
+          <div className="align-items-lg-end" style={{
+            color:"white"
+          }}>
             <h3>常見問題</h3>
           </div>
         </Col>

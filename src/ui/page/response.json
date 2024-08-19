@@ -5,6 +5,7 @@
     "floor": "日出康城Marini3B座高層",
     "imageUrl": "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     "address": "康城路1號",
+    "district": "黃大仙區",
     "livingRoom": 1,
     "Room": 2,
     "saleableSize": 470,
@@ -17,6 +18,7 @@
     "floor": "將軍澳廣場6座高層",
     "imageUrl": "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     "address": "將軍澳唐德街1號",
+    "district": "香港島",
     "livingRoom": 1,
     "Room": 2,
     "saleableSize": 470,
@@ -29,6 +31,7 @@
     "floor": "沙田第一城4期43座高層",
     "imageUrl": "https://images.pexels.com/photos/1571468/pexels-photo-1571468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     "address": "第一城/石門得寶街3號",
+    "district": "黃大仙區",
     "livingRoom": 1,
     "Room": 2,
     "saleableSize": 284,
@@ -41,10 +44,24 @@
     "floor": "沙田第一城4期43座高層",
     "imageUrl": "https://images.pexels.com/photos/1571468/pexels-photo-1571468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     "address": "第一城/石門得寶街3號",
+    "district": "九龍城區",
     "livingRoom": 1,
     "Room": 2,
     "saleableSize": 284,
     "date": "16/8/2024",
     "isRent": false
+  },
+  {
+    "pid": 5,
+    "rental": 18500,
+    "floor": "日出康城Marini3B座高層",
+    "imageUrl": "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "address": "康城路1號",
+    "district": "中西區",
+    "livingRoom": 1,
+    "Room": 2,
+    "saleableSize": 470,
+    "date": "16/8/2024",
+    "isRent": true
   }
 ]

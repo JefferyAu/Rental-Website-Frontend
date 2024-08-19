@@ -12,7 +12,7 @@ export default class Header extends Component<Props, State>{
       <>
         <Navbar expand="lg" className="bg-body-tertiary">
           <Container>
-            <Navbar.Brand href="#home"><img src="/src/assets/img/logo2.png" className="header-img"/></Navbar.Brand>
+            <Navbar.Brand href="#home"><img src="/src/assets/img/ug.png" className="header-img"/></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">

@@ -12,7 +12,7 @@ export default class Footer extends Component<Props, State> {
       <Container>
         <Row className="footer-container">
           <Col className="d-flex justify-content-center align-items-center flex-column">
-            <img src="/src/assets/img/logo2.png" id="footer-img"/>
+            <img src="/src/assets/img/ug.png" id="footer-img"/>
             <p>你的免費租屋網。100%終身免佣。自助配對。</p>
           </Col>
           <Col className="d-flex justify-content-center align-items-center flex-column">

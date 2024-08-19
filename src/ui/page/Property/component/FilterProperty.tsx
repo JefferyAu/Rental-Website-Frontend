@@ -1,6 +1,4 @@
 import {Col, Container, Dropdown, DropdownButton, Row} from "react-bootstrap";
-import FilterSection from "./FilterSection.tsx";
-
 
 
 export default function FilterProperty(){
@@ -12,7 +10,6 @@ export default function FilterProperty(){
         {/*</Col>*/}
         <Col>
           <Container>
-          <FilterSection/>
           <div className="filter-btn">
           <DropdownButton id="dropdown-basic-button" title="預設排序">
             <Dropdown.Item href="#/action-1">預設排序</Dropdown.Item>

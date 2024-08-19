@@ -5,7 +5,9 @@ export default function Banner(){
     <>
       <Row className="banner-img">
         <Col className="d-flex justify-content-center align-items-center flex-column">
-          <div className="align-items-lg-end">
+          <div className="align-items-lg-end" style={{
+            color:"white"
+          }}>
             <h3>搜尋租盤</h3>
             <p>100%終身免佣。自助配對。</p>
           </div>

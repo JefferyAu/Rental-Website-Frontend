@@ -6,7 +6,7 @@ export default function LatestBlog(){
     <Container>
       <Row>
       {
-        Array.from({length:5}).map(()=>(
+        Array.from({length:3}).map(()=>(
           <Col xs={12} sm={6} md={4}>
           <SingleBlog/>
           </Col>

@@ -5,17 +5,24 @@ import {PropertyDetailsDto} from "../../../../data/PropertyDetails.type.ts";
 
 type Props = {
   getPropertyDetailsDtoList:PropertyDetailsDto[]
+  locationFilter:string
+  districtTypeFilter:string
 }
 
 
-export default function LatestRentalProperty({getPropertyDetailsDtoList}:Props) {
+export default function LatestRentalProperty({getPropertyDetailsDtoList,
+                                               locationFilter,
+                                               districtTypeFilter}:Props) {
     return (
       <Container>
         <div className="single-property">
         </div>
         <Row>
           {
-            getPropertyDetailsDtoList.map((value)=> (
+            getPropertyDetailsDtoList.filter((value)=>(
+              value.address.includes(locationFilter) && value.district.includes(districtTypeFilter)
+            ))
+              .map((value)=> (
               <Col xs={12} sm={6} md={4}>
               <SingleProperty key={value.pid} getPropertyDetailsDto={value}/>
               </Col>

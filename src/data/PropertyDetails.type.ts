@@ -9,4 +9,5 @@ export interface PropertyDetailsDto {
   saleableSize: number;
   date:         string;
   isRent:       boolean;
+  district:     string;
 }

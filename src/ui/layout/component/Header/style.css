@@ -1,6 +1,7 @@
 .header-img{
-    width: 150px;  /* Adjust the width as needed */
+    width: 48px;  /* Adjust the width as needed */
     height: auto;  /* Maintains aspect ratio */
+    border-radius: 10px;
 }
 
 .header-right{

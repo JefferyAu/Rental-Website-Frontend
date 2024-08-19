@@ -1,5 +1,6 @@
 div.contact-banner-img.row{
-    background-image: url("/src/assets/img/mainbg.png");
+    /*background-image: url("/src/assets/img/mainbg.png");*/
+    background: linear-gradient(90deg, rgba(8, 12, 18, 1) 18%, rgba(255, 219, 21, 1) 87%);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
@@ -7,7 +8,6 @@ div.contact-banner-img.row{
     margin-bottom: 0px;
 }
 .ContactUs-details{
-    background-color: #6C6C6C;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,15 +15,15 @@ div.contact-banner-img.row{
 }
 
 .ContactUs-details h1{
-    color: white;
+    color: black;
 }
 
 .ContactUs-details p{
-    color: white;
+    color: black;
 }
 
 .contactHr{
-    color: white;
+    color: black;
     border-top: 2px solid;
     width: 87px;
     margin-top: 24px;
