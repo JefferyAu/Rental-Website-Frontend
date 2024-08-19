@@ -1,0 +1,17 @@
+.header-img{
+    width: 150px;  /* Adjust the width as needed */
+    height: auto;  /* Maintains aspect ratio */
+}
+
+.header-right{
+    margin-left: 25px;
+}
+.login-logo{
+    width: 25px;
+    height: 25px;
+    background-image: url("/src/assets/img/enter.png");
+    background-size: cover;
+}
+a#login-text.header-right.nav-link{
+    display: flex;
+}

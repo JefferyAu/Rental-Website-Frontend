@@ -1,0 +1,21 @@
+#footer-img {
+    width: 100px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-text {
+    margin-bottom: 10px;
+}
+
+.footer-text a {
+    color: black;
+}
+
+@media (max-width: 700px) {
+    /* 在螢幕寬度小於700px時套用的樣式 */
+    div.footer-container.row {
+        display: block !important;
+    }
+}

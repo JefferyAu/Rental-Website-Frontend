@@ -1,0 +1,21 @@
+div.banner-img.row{
+    background-image: url("/src/assets/img/mainbg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 40vh;
+    margin-bottom: 0px;
+}
+.filter-btn{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15px;
+}
+.filter-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+}

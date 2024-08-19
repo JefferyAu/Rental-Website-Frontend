@@ -1,0 +1,35 @@
+div.contact-banner-img.row{
+    background-image: url("/src/assets/img/mainbg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 60vh;
+    margin-bottom: 0px;
+}
+.ContactUs-details{
+    background-color: #6C6C6C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ContactUs-details h1{
+    color: white;
+}
+
+.ContactUs-details p{
+    color: white;
+}
+
+.contactHr{
+    color: white;
+    border-top: 2px solid;
+    width: 87px;
+    margin-top: 24px;
+    margin-bottom: 26px;
+}
+.submitForm{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
