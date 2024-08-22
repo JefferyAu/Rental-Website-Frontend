@@ -6,6 +6,8 @@ import {PropertyDetailsDto} from "../../../data/PropertyDetails.type.ts";
 import mockData from "../response.json"
 import LatestRentalProperty from "../../layout/component/LatestRentalProperty";
 import {useEffect, useState} from "react";
+import LoadingContainer from "../../layout/component/LoadingContainer.tsx";
+
 
 
 export default function HomePage() {
@@ -26,14 +28,15 @@ export default function HomePage() {
       <Header/>
       <Hero/>
       <div className="latest-text">
-        <h1>最新租盤</h1><br/>
+        <h1>熱門租盤</h1><br/>
       </div>
       {
-        propertyDetailsDto &&
+        propertyDetailsDto ?
           <LatestRentalProperty getPropertyDetailsDtoList={propertyDetailsDto}
           locationFilter={locationFilter}
           districtTypeFilter={districtTypeFilter}
           />
+          :<LoadingContainer/>
       }
       <Footer/>
     </>

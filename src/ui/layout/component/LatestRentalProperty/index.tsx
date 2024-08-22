@@ -23,7 +23,8 @@ export default function LatestRentalProperty({getPropertyDetailsDtoList,
               value.address.includes(locationFilter) && value.district.includes(districtTypeFilter)
             ))
               .map((value)=> (
-              <Col xs={12} sm={6} md={4}>
+
+              <Col lg={4} sm={12} md={6}>
               <SingleProperty key={value.pid} getPropertyDetailsDto={value}/>
               </Col>
             ))

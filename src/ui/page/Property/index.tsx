@@ -7,7 +7,8 @@ import mockData from "../response.json";
 import LatestRentalProperty from "../../layout/component/LatestRentalProperty";
 import {useEffect, useState} from "react";
 import FilterSection from "./component/FilterSection.tsx";
-import {Container} from "react-bootstrap";
+import { Container} from "react-bootstrap";
+import LoadingContainer from "../../layout/component/LoadingContainer.tsx";
 
 export default function Property(){
 
@@ -32,19 +33,22 @@ export default function Property(){
         <Header/>
         <Banner/>
         <Container>
-        <FilterSection locationFilter={locationFilter}
-        handleLocationFilterChange={handleLocationFilterChange}
-                       districtTypeFilter={districtTypeFilter}
-        handleDistrictFilterChange={handleDistrictFilterChange}
-        />
+          <FilterSection locationFilter={locationFilter}
+                         handleLocationFilterChange={handleLocationFilterChange}
+                         districtTypeFilter={districtTypeFilter}
+                         handleDistrictFilterChange={handleDistrictFilterChange}
+          />
+
+            {
+              propertyDetailsDto ?
+                <LatestRentalProperty getPropertyDetailsDtoList={propertyDetailsDto}
+                                      locationFilter={locationFilter}
+                                      districtTypeFilter={districtTypeFilter}
+                />
+                :<LoadingContainer/>
+            }
+
         </Container>
-        {
-          propertyDetailsDto &&
-            <LatestRentalProperty getPropertyDetailsDtoList={propertyDetailsDto}
-            locationFilter={locationFilter}
-            districtTypeFilter={districtTypeFilter}
-            />
-        }
         <Footer/>
       </>
     );

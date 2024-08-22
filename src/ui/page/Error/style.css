@@ -1,0 +1,8 @@
+.error-banner{
+    background-image: url("/src/assets/img/404.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 95vh;
+    margin-bottom: 0px;
+}

@@ -16,7 +16,7 @@ export default function Hero(){
           <div className="align-items-lg-end" id="heroText">
             <h2 style={{
               color: "white"
-            }}>你的免費租屋網，可放租<span>{text}<Cursor/></span></h2>
+            }}>你的免費租屋網，可放租<span className="typeWriter">{text}<Cursor/></span></h2>
 
             <p style={{
               color: "white"

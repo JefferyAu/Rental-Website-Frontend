@@ -25,7 +25,7 @@ export default function ContactForm(){
             <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
               <Form.Control as="textarea" rows={3} placeholder="你的查詢"/>
             </Form.Group>
-            <Button variant="primary" type="submit">
+            <Button variant="dark" type="submit">
               提交
             </Button>
           </Form>

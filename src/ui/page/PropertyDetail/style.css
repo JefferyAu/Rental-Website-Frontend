@@ -1,0 +1,13 @@
+div.property-banner-img.row{
+    background-image: url("/src/assets/img/pmain.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 40vh;
+    margin-bottom: 0px;
+}
+.owner-info{
+    background-color: #F9F9F9;
+    padding: 48px;
+    border-radius: 15px;
+}

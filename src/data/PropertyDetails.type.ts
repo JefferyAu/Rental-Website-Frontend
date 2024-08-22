@@ -8,6 +8,7 @@ export interface PropertyDetailsDto {
   Room:         number;
   saleableSize: number;
   date:         string;
+  inIntroduction: string;
   isRent:       boolean;
   district:     string;
 }

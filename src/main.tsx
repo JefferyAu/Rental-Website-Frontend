@@ -11,11 +11,14 @@ import Property from "./ui/page/Property";
 import Blog from "./ui/page/Blog";
 import Faq from "./ui/page/Faq";
 import ContactUs from "./ui/page/ContactUs";
+import PropertyDetail from "./ui/page/PropertyDetail";
+import Error from "./ui/page/Error";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement:<Error/>
   },
   {
     path: "property",
@@ -32,6 +35,14 @@ const router = createBrowserRouter([
   {
     path: "contactUs",
     element: <ContactUs />,
+  },
+  {
+    path: "property/detail/:propertyId",
+    element: <PropertyDetail/>,
+  },
+  {
+    path: "error",
+    element: <Error />,
   },
 ]);
 

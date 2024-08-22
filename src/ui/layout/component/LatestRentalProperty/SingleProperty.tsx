@@ -1,18 +1,21 @@
 import {Badge, Card, Col, Row} from "react-bootstrap";
 import {PropertyDetailsDto} from "../../../../data/PropertyDetails.type.ts";
+import {useNavigate} from "react-router-dom";
 
 type Props ={
   getPropertyDetailsDto:PropertyDetailsDto
 }
 
 export default function SingleProperty({getPropertyDetailsDto}:Props){
-
+    const navigate = useNavigate();
 
     return(
     <>
       <Card style={{
         cursor:"pointer"
-      }} className="propertyCard">
+      }} className="propertyCard"
+      onClick={()=>{navigate(`/property/detail/${getPropertyDetailsDto.pid}`)}}
+      >
         <div className="singlePropertyPadding">
         <Card.Img variant="top" src={getPropertyDetailsDto.imageUrl} />
         <div className="propertyRentStatus">
