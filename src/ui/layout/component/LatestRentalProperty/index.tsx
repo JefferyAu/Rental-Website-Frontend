@@ -1,7 +1,7 @@
 import "./style.css"
 import SingleProperty from "./SingleProperty.tsx";
 import {Col, Container, Row} from "react-bootstrap";
-import {PropertyDetailsDto} from "../../../../data/PropertyDetails.type.ts";
+import {PropertyDetailsDto} from "../../../../data/product/PropertyDetails.type.ts";
 
 type Props = {
   getPropertyDetailsDtoList:PropertyDetailsDto[]

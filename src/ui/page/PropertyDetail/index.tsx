@@ -3,7 +3,7 @@ import Header from "../../layout/component/Header";
 import Footer from "../../layout/component/Footer";
 import PropertyDetailsByID from "./component/PropertyDetailsByID.tsx";
 import {useEffect, useState} from "react";
-import {PropertyDetailsDto} from "../../../data/PropertyDetails.type.ts";
+import {PropertyDetailsDto} from "../../../data/product/PropertyDetails.type.ts";
 import mockData from "../response.json";
 import LoadingContainer from "../../layout/component/LoadingContainer.tsx";
 

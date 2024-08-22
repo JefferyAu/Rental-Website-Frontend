@@ -2,7 +2,7 @@ import Header from "../../layout/component/Header";
 import Hero from "./component/Hero.tsx";
 import "./component/style.css";
 import Footer from "../../layout/component/Footer";
-import {PropertyDetailsDto} from "../../../data/PropertyDetails.type.ts";
+import {PropertyDetailsDto} from "../../../data/product/PropertyDetails.type.ts";
 import mockData from "../response.json"
 import LatestRentalProperty from "../../layout/component/LatestRentalProperty";
 import {useEffect, useState} from "react";

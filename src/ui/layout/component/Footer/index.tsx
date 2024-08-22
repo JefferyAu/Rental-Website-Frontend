@@ -1,13 +1,7 @@
-import {Component} from "react";
 import {Col, Container, Row} from "react-bootstrap";
 import "./style.css";
 
-type Props = {}
-
-type State = {}
-
-export default class Footer extends Component<Props, State> {
-  render() {
+export default function Footer() {
     return (
       <Container>
         <Row className="footer-container">
@@ -44,5 +38,4 @@ export default class Footer extends Component<Props, State> {
         </Row>
       </Container>
     );
-  }
 }

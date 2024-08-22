@@ -11,4 +11,6 @@ export interface PropertyDetailsDto {
   inIntroduction: string;
   isRent:       boolean;
   district:     string;
+  ownerName: string,
+  ownerPhone: number,
 }

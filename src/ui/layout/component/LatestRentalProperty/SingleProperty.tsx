@@ -1,5 +1,5 @@
 import {Badge, Card, Col, Row} from "react-bootstrap";
-import {PropertyDetailsDto} from "../../../../data/PropertyDetails.type.ts";
+import {PropertyDetailsDto} from "../../../../data/product/PropertyDetails.type.ts";
 import {useNavigate} from "react-router-dom";
 
 type Props ={

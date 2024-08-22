@@ -1,4 +1,4 @@
-import {PropertyDetailsDto} from "../../../../data/PropertyDetails.type.ts";
+import {PropertyDetailsDto} from "../../../../data/product/PropertyDetails.type.ts";
 import {useParams} from "react-router-dom";
 import PropertyDetailContainer from "./PropertyDetailContainer.tsx";
 
